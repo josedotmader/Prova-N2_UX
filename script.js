@@ -71,6 +71,7 @@ function mostrarUsuarios() {
             "<h2>" + usuario.name + "</h2>" +
             "<p>Email: " + usuario.email + "</p>" +
             "<p>Telefone: " + usuario.phone + "</p>" +
+            "<p>Endereço: " + usuario.address.city + "</p>" +
             "<button onclick='editarUsuario(" + index + ")'>Editar</button>" +
             "<button onclick='removerUsuario(" + index + ")'>Remover</button>" +
             "</div>"
