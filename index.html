@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Posts</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <button onclick="location.href='index.html'">Posts</button>
+            <button onclick="location.href='usuarios.html'">Usuários</button>
+        </nav>
+    </div>
+
+    <h1>Posts</h1>
+
+    <div class="formulario">
+        <input type="text" id="titulo" placeholder="Título">
+        <textarea id="descricao" placeholder="Descrição"></textarea>
+
+        <button onclick="adicionarPost()">
+            Adicionar
+        </button>
+    </div>
+
+    <div id="elemento"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
