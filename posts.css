@@ -45,3 +45,17 @@ h1 {
     border-radius: 5px;
     font-family: 'Lucida Grande', Verdana, sans-serif;
 }
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #52e76b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #18802e;
+}
