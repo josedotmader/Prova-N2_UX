@@ -1,7 +1,21 @@
 body {
     font-family: 'Lucida Grande', Verdana, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #b352eb, #24816c);
+    background-size: 100%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .header {
@@ -26,19 +40,23 @@ body {
 
 h1 {
     text-align: center;
-    color: #000000;
     text-transform: uppercase;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
 }
 
 .formulario {
     width: 80%;
-    max-width: 350px;
+    max-width: 500px;
     margin: 20px auto;
 }
 
 .formulario input,
 .formulario textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #000000;
@@ -72,4 +90,29 @@ h1 {
 
 .card h2 {
     margin-top: 0;
+}
+
+.card button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.card button:first-of-type {
+    background-color: orange;
+}
+
+.card button:first-of-type:hover {
+    background-color: #554e0c;
+}
+
+.card button:last-of-type {
+    background-color: red;
+}
+
+.card button:last-of-type:hover {
+    background-color: #5e1111;
 }
