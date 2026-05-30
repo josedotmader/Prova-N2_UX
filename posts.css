@@ -23,3 +23,25 @@ body {
 .header button:hover {
     background-color: #105799;
 }
+
+h1 {
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.formulario {
+    width: 80%;
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: 'Lucida Grande', Verdana, sans-serif;
+}
