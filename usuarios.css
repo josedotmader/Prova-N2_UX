@@ -1,14 +1,32 @@
 h1 {
-    color: #000000;
     text-align: center;
     margin-top: 20px;
     text-transform: uppercase;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 15px
 }
 
 body {
     margin: 0;
-    background: #f0f2f5;
     font-family: 'Lucida Grande', Verdana, sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #b352eb, #24816c);
+    background-size: 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .card {
@@ -37,6 +55,7 @@ body > button {
     border: 0;
     border-radius: 6px;
     cursor: pointer;
+    
 }
 
 body > button:hover {
@@ -44,12 +63,12 @@ body > button:hover {
 }
 
 .card button {
-    margin-top: 10px;
-    padding: 8px 15px;
+    padding: 8px 12px;
     border: none;
-    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: white;
     cursor: pointer;
-    border-radius: 4px;
+    margin-right: 5px;
 }
 
 .card button:first-of-type {
@@ -68,3 +87,26 @@ body > button:hover {
     background: #5e1111;
 }
 
+.header {
+    background: #000000;
+    padding: 12px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header button {
+    background: #51afe6;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background: #105799;
+}
