@@ -10,3 +10,16 @@ body {
     text-align: center;
 }
 
+.header button {
+    background-color: #51afe6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header button:hover {
+    background-color: #105799;
+}
