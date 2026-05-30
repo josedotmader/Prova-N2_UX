@@ -25,5 +25,46 @@ body {
 }
 
 .card p {
-    color: #555;
+    color: #000000;
 }
+
+body > button {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 25px;
+    background: #52e76b;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+body > button:hover {
+    background: #18802e;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.card button:first-of-type {
+    background: orange;
+}
+
+.card button:first-of-type:hover {
+    background: #554e0c;
+}
+
+.card button:last-of-type {
+    background: red;
+}
+
+.card button:last-of-type:hover {
+    background: #5e1111;
+}
+
