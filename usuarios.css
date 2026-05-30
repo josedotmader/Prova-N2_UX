@@ -1,0 +1,13 @@
+h1 {
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+body {
+    margin: 0;
+    background: #f0f2f5;
+    font-family: 'Lucida Grande', Verdana, sans-serif;
+}
+
