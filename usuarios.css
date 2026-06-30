@@ -1,112 +1,128 @@
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    text-transform: uppercase;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 15px
-}
-
 body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    font-family: 'Lucida Grande', Verdana, sans-serif;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #b352eb, #24816c);
-    background-size: 400%;
-    animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.card {
-    width: 75%;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-left: 10px solid #f3b121;
-    border-radius: 6px;
-}
-
-.card h2 {
-    margin-bottom: 10px;
-}
-
-.card p {
-    color: #000000;
-}
-
-body > button {
-    display: block;
-    margin: 15px auto;
-    padding: 12px 25px;
-    background: #52e76b;
-    color: white;
-    border: 0;
-    border-radius: 6px;
-    cursor: pointer;
-    
-}
-
-body > button:hover {
-    background: #18802e;
-}
-
-.card button {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    margin-right: 5px;
-}
-
-.card button:first-of-type {
-    background: orange;
-}
-
-.card button:first-of-type:hover {
-    background: #554e0c;
-}
-
-.card button:last-of-type {
-    background: red;
-}
-
-.card button:last-of-type:hover {
-    background: #5e1111;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 .header {
-    background: #000000;
-    padding: 12px;
-}
-
-.header nav {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
 }
 
 .header button {
-    background: #51afe6;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 18px;
-    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0 5px;
     cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 .header button:hover {
-    background: #105799;
+    background-color: #45a049;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.instrucao {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.status-msg {
+    text-align: center;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.formulario {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #17a2b8; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario button:hover {
+    background-color: #138496;
+}
+
+.card {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 5px solid #17a2b8; 
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.card button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.btn-editar {
+    background-color: #f0ad4e;
+}
+
+.btn-editar:hover {
+    background-color: #ec971f;
+}
+
+.btn-remover {
+    background-color: #d9534f;
+}
+
+.btn-remover:hover {
+    background-color: #c9302c;
 }

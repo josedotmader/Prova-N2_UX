@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -17,14 +17,19 @@
         </nav>
     </div>
 
-    <h1>Usuários</h1>
+    <h1>Gerenciamento de Usuários</h1>
+    <p class="instrucao">Preencha os dados abaixo para adicionar um novo usuário.</p>
 
-    <button onclick="adicionarUsuario()" >
-                Adicionar Usuário
-    </button>
+    <div class="formulario">
+        <input type="text" id="nomeUser" placeholder="Nome Completo">
+        <input type="email" id="emailUser" placeholder="E-mail">
+        <input type="text" id="telefoneUser" placeholder="Telefone">
+        <input type="text" id="cidadeUser" placeholder="Cidade">
+        <button onclick="adicionarUsuario()">Adicionar Usuário</button>
+    </div>
 
+    <p id="status-usuarios" class="status-msg">Carregando dados da internet...</p>
     <div id="usuarios"></div>
-    
 
     <script src="script.js"></script>
 

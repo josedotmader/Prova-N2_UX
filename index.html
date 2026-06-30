@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -17,17 +17,16 @@
         </nav>
     </div>
 
-    <h1>Posts</h1>
+    <h1>Gerenciamento de Posts</h1>
+    <p class="instrucao">Preencha os campos abaixo para adicionar um novo post.</p>
 
     <div class="formulario">
-        <input type="text" id="titulo" placeholder="Título">
-        <textarea id="descricao" placeholder="Descrição"></textarea>
-
-        <button onclick="adicionarPost()">
-            Adicionar
-        </button>
+        <input type="text" id="titulo" placeholder="Digite o título do post">
+        <textarea id="descricao" placeholder="Digite a descrição do post"></textarea>
+        <button onclick="adicionarPost()">Adicionar Post</button>
     </div>
 
+    <p id="status-posts" class="status-msg">Carregando dados da internet...</p>
     <div id="elemento"></div>
 
     <script src="script.js"></script>

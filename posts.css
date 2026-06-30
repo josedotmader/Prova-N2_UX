@@ -1,119 +1,129 @@
 body {
-    font-family: 'Lucida Grande', Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #b352eb, #24816c);
-    background-size: 100%;
-    animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 .header {
-    background-color: #000000;
+    background-color: #222;
     padding: 15px;
     text-align: center;
 }
 
 .header button {
-    background-color: #51afe6;
+    background-color: #4CAF50;
     color: white;
     border: none;
     padding: 10px 20px;
     margin: 0 5px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 .header button:hover {
-    background-color: #105799;
+    background-color: #45a049;
 }
 
 h1 {
     text-align: center;
-    text-transform: uppercase;
-    background-color: #333;
-    color: white;
+    color: #222;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.instrucao {
     text-align: center;
-    margin: 0;
-    padding: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.status-msg {
+    text-align: center;
+    font-weight: bold;
+    color: #0056b3;
 }
 
 .formulario {
-    width: 80%;
+    width: 90%;
     max-width: 500px;
-    margin: 20px auto;
+    margin: 0 auto 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .formulario input,
 .formulario textarea {
-    width: 95%;
+    width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    font-family: 'Lucida Grande', Verdana, sans-serif;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 80px;
 }
 
 .formulario button {
     width: 100%;
     padding: 10px;
-    background-color: #52e76b;
+    background-color: #007BFF;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .formulario button:hover {
-    background-color: #18802e;
+    background-color: #0056b3;
 }
 
 .card {
     background-color: white;
-    width: 80%;
+    width: 90%;
     max-width: 600px;
     margin: 15px auto;
-    padding: 15px;
+    padding: 15px 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-left: 10px solid #e02c2c;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 5px solid #007BFF;
 }
 
 .card h2 {
     margin-top: 0;
+    color: #222;
 }
 
 .card button {
-    padding: 8px 12px;
+    padding: 8px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     color: white;
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
-.card button:first-of-type {
-    background-color: orange;
+.btn-editar {
+    background-color: #f0ad4e;
 }
 
-.card button:first-of-type:hover {
-    background-color: #554e0c;
+.btn-editar:hover {
+    background-color: #ec971f;
 }
 
-.card button:last-of-type {
-    background-color: red;
+.btn-remover {
+    background-color: #d9534f;
 }
 
-.card button:last-of-type:hover {
-    background-color: #5e1111;
+.btn-remover:hover {
+    background-color: #c9302c;
 }
